@@ -1,0 +1,11 @@
+.foo {
+  border: 1px solid currentColor;
+}
+
+.bar {
+  color: var(--currentColor);
+}
+
+.baz {
+  background-image: linear-gradient(currentColor, #222);
+}
