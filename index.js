@@ -1,6 +1,6 @@
 var postcss = require('postcss')
 
-module.exports = function () {
+module.exports = postcss.plugin('postcss-currentcolor', function() {
   return function (root) {
     root.walkDecls(function (decl) {
       if (decl.value.match(/currentcolor/)) {
@@ -12,4 +12,4 @@ module.exports = function () {
 
     return root
   }
-}
+})
